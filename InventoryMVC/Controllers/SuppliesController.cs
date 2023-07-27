@@ -19,6 +19,8 @@ namespace InventoryMVC.Controllers
             _context = context;
         }
 
+        //Single Responsibility Principle (SRP) / Since all of the task function indepentently of each other I made sure seperate all the methods to cut out the errors.
+
         // GET: Supplies
         public async Task<IActionResult> Index()
         {
